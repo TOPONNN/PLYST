@@ -1,0 +1,17 @@
+.git
+.gitignore
+*.md
+.env
+.env.*
+!.env.example
+.vscode
+.idea
+.settings
+.classpath
+.project
+.factorypath
+bin
+build
+out
+*.log
+.gradle

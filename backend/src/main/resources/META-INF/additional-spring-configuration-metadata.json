@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "spotify.client-id",
+      "type": "java.lang.String",
+      "description": "Spotify API Client ID"
+    },
+    {
+      "name": "spotify.client-secret",
+      "type": "java.lang.String",
+      "description": "Spotify API Client Secret"
+    },
+    {
+      "name": "brave.search.api-key",
+      "type": "java.lang.String",
+      "description": "Brave Search API Key for image search"
+    }
+  ]
+}
