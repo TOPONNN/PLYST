@@ -5,7 +5,7 @@
 <h1 align="center">PLYST</h1>
 
 <p align="center">
-  <strong>Play + Playlist = PLYST</strong><br/>
+  <strong>Playlist + List = PLYST</strong><br/>
   <sub>음악을 함께 듣고, 공유하고, 소통하는 음악 커뮤니티 플랫폼</sub>
 </p>
 
