@@ -301,8 +301,6 @@ PLYST/
   </tbody>
 </table>
 
-<br/>
-
 <p align="center">
   <sub>클라우드 데브옵스 프론트엔드&백엔드 자바(JAVA) 풀스택 개발자 취업캠프 - <b>2조</b></sub>
 </p>
