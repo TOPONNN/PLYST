@@ -38,42 +38,35 @@
 
 ## ✨ 주요 기능
 
-<table>
-  <tr>
-    <td align="center" width="33%">
-      <h3>🎵</h3>
-      <b>플레이리스트</b><br/>
-      <sub>생성 · 공유 · 검색</sub>
-    </td>
-    <td align="center" width="33%">
-      <h3>🤖</h3>
-      <b>AI 추천</b><br/>
-      <sub>ChatGPT 기반 맞춤 추천</sub>
-    </td>
-    <td align="center" width="33%">
-      <h3>📺</h3>
-      <b>스테이션</b><br/>
-      <sub>실시간 동시 감상</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <h3>💬</h3>
-      <b>소셜 기능</b><br/>
-      <sub>좋아요 · 댓글 · 팔로우</sub>
-    </td>
-    <td align="center">
-      <h3>📝</h3>
-      <b>실시간 자막</b><br/>
-      <sub>Whisper AI 번역 자막</sub>
-    </td>
-    <td align="center">
-      <h3>🔐</h3>
-      <b>소셜 로그인</b><br/>
-      <sub>Google · Kakao</sub>
-    </td>
-  </tr>
-</table>
+### 🎵 플레이리스트
+- Spotify API를 통한 음악 검색 및 추가
+- 커버 이미지, 제목, 설명, 태그 설정
+- 공개/비공개 설정 및 공유 링크 생성
+- 좋아요, 댓글, 조회수 표시
+- 드래그 앤 드롭으로 곡 순서 변경
+
+### 🤖 AI 음악 추천
+- ChatGPT 기반 키워드 맞춤 추천
+- 한 번에 3개의 플레이리스트 × 10곡 제안
+- Brave Search API로 커버 이미지 자동 검색
+
+### 📺 스테이션 (실시간 동시 감상)
+- YouTube MV 실시간 동기화 재생 (40~50ms 딜레이)
+- 참여자 간 실시간 채팅
+- 호스트 권한 관리 (재생 제어, 강퇴, 권한 양도)
+- 공개/비공개 방 생성 및 초대 코드
+- Whisper API 기반 실시간 자막 및 번역
+
+### 💬 소셜 기능
+- 좋아요, 댓글, 팔로우
+- 실시간 알림 (WebSocket)
+- 사용자 차단 및 관리
+
+### 🔐 회원 관리
+- 이메일 회원가입 및 로그인
+- Google, Kakao 소셜 로그인
+- 이메일 인증을 통한 아이디/비밀번호 찾기
+- JWT 기반 자동 로그인
 
 ---
 
@@ -241,41 +234,96 @@ PLYST/
 
 ---
 
-## 👥 팀원
-
-<table>
-  <tr>
-    <td align="center">
-      <b>윤희준</b><br/>
-      <sub>팀장 · Backend</sub><br/>
-      <sub>배포 · AI 서비스 · Station</sub>
-    </td>
-    <td align="center">
-      <b>김성민</b><br/>
-      <sub>Frontend</sub><br/>
-      <sub>UI/UX 설계 · API 연동</sub>
-    </td>
-    <td align="center">
-      <b>김관익</b><br/>
-      <sub>Backend</sub><br/>
-      <sub>회원관리 · 소셜 로그인</sub>
-    </td>
-    <td align="center">
-      <b>박찬진</b><br/>
-      <sub>Backend</sub><br/>
-      <sub>API 연동 · 인기 플레이리스트</sub>
-    </td>
-    <td align="center">
-      <b>정훈호</b><br/>
-      <sub>Backend</sub><br/>
-      <sub>WebSocket · DB 설계</sub>
-    </td>
-  </tr>
-</table>
+## 👥 팀 소개
 
 <p align="center">
-  <sub>클라우드 데브옵스 프론트엔드&백엔드 자바(JAVA) 풀스택 개발자 취업캠프 - 2조</sub>
+  <sub>클라우드 데브옵스 프론트엔드&백엔드 자바(JAVA) 풀스택 개발자 취업캠프 - <b>2조</b></sub>
 </p>
+
+<br/>
+
+<table>
+  <thead>
+    <tr>
+      <th>이름</th>
+      <th>역할</th>
+      <th>담당 업무</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center"><b>윤희준</b></td>
+      <td align="center">팀장 / Backend</td>
+      <td>
+        • 전체 UI 설계 및 로고 제작<br/>
+        • AWS 환경 세팅 및 도메인 배포<br/>
+        • Docker 이미지 배포<br/>
+        • ChatGPT 기반 AI 추천 플레이리스트 설계<br/>
+        • 플레이리스트 커버 이미지 검색 기능<br/>
+        • 스테이션 기능 구현
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><b>김성민</b></td>
+      <td align="center">Frontend</td>
+      <td>
+        • Figma를 이용한 전체 UI/UX 설계<br/>
+        • 주요 페이지 모달 기능 구현<br/>
+        • 컴포넌트 구조 정리 및 재사용성 확보<br/>
+        • Frontend API 연동
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><b>김관익</b></td>
+      <td align="center">Backend</td>
+      <td>
+        • 로그인/회원가입 구현 및 설계<br/>
+        • 좋아요/팔로우/회원탈퇴 구현<br/>
+        • Google, Kakao 소셜 연동 회원가입<br/>
+        • 이메일 인증을 통한 아이디/비밀번호 찾기
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><b>박찬진</b></td>
+      <td align="center">Backend</td>
+      <td>
+        • API 연동 정보 및 사용법 조사<br/>
+        • 기능 및 UI 아이디어 제안<br/>
+        • 요구사항 분석서 설계<br/>
+        • AWS 배포 테스트<br/>
+        • 인기 플레이리스트 기능 구현
+      </td>
+    </tr>
+    <tr>
+      <td align="center"><b>정훈호</b></td>
+      <td align="center">Backend</td>
+      <td>
+        • WebSocket을 이용한 메인 페이지 실시간 처리<br/>
+        • 스테이션 페이지 UI/UX 설계<br/>
+        • 클래스 다이어그램 및 데이터베이스 설계<br/>
+        • 협업 도구(Notion, Discord, GitHub) 관리
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br/>
+
+### 공통 작업
+- ERD 설계
+- 기능 테스트 및 검수
+- PPT 제작
+
+---
+
+## 📅 개발 일정
+
+| 주차 | 기간 | 작업 내용 |
+|:---:|:---|:---|
+| **1주차** | 12.15 ~ 12.19 | 주제 선정, 역할 분배, 계획서 검토, API 조사, 요구분석 및 UI 설계 |
+| **2주차** | 12.22 ~ 12.26 | DB 설계, ERD 작성, 클래스 다이어그램 작성, 환경 설정 |
+| **3주차** | 12.29 ~ 01.02 | 기능 구현, 오류 수정, 진행상황 공유 |
+| **4주차** | 01.05 ~ 01.09 | 테스트, 피드백 반영, 최종 발표자료 작성 |
 
 ---
 
