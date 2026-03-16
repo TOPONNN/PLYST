@@ -116,7 +116,7 @@ export default function OAuthCallback() {
           setStatus("카카오 로그인 처리 중...");
           try {
             const response = await fetch(
-              `https://plyst.info/api/users/kakao-login?code=${code}&redirectUri=${encodeURIComponent(window.location.origin + "/auth/kakao/callback")}`
+              `https://plyst.topon.dev/api/users/kakao-login?code=${code}&redirectUri=${encodeURIComponent(window.location.origin + "/auth/kakao/callback")}`
             );
             
             if (!response.ok) {

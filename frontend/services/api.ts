@@ -1,6 +1,6 @@
 import axios, { AxiosError } from 'axios';
 
-const API_BASE_URL = 'https://plyst.info';
+const API_BASE_URL = 'https://plyst.topon.dev';
 
 // axios 인스턴스 생성 (타임아웃 설정)
 const apiClient = axios.create({
@@ -162,6 +162,40 @@ export const searchTracks = async (query: string, limit: number = 15): Promise<T
   } catch (error) {
     console.error('트랙 검색 오류:', error);
     return [];
+  }
+};
+
+export interface YouTubeVideoResult {
+  videoId: string;
+  title: string;
+  channelName: string;
+  thumbnailUrl: string;
+  durationMs: number;
+}
+
+export const searchYoutubeVideos = async (query: string, limit: number = 10): Promise<YouTubeVideoResult[]> => {
+  try {
+    const response = await apiClient.get(`/search/youtube`, {
+      params: { query, limit },
+      timeout: 15000,
+    });
+    return response.data;
+  } catch (error) {
+    console.error('YouTube 검색 오류:', error);
+    return [];
+  }
+};
+
+export const getYoutubeVideoInfo = async (videoId: string): Promise<YouTubeVideoResult | null> => {
+  try {
+    const response = await apiClient.get(`/search/youtube/video`, {
+      params: { videoId },
+      timeout: 10000,
+    });
+    return response.data;
+  } catch (error) {
+    console.error('YouTube 영상 정보 조회 오류:', error);
+    return null;
   }
 };
 

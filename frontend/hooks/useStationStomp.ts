@@ -3,7 +3,7 @@ import { Client, IMessage, StompSubscription } from "@stomp/stompjs";
 import SockJS from "sockjs-client";
 import { StationDetail, StationParticipant, StationPlayback, StationUserInfo } from "../services/api";
 
-const API_BASE = (import.meta.env.VITE_API_URL || "https://plyst.info").replace(/\/$/, "");
+const API_BASE = (import.meta.env.VITE_API_URL || "https://plyst.topon.dev").replace(/\/$/, "");
 const WS_STOMP_URL = `${API_BASE}/ws-stomp`;
 
 export interface ChatMessage {

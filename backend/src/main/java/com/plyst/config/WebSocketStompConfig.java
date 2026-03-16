@@ -16,8 +16,8 @@ public class WebSocketStompConfig implements WebSocketMessageBrokerConfigurer {
     private final StompChannelInterceptor stompChannelInterceptor;
 
     private static final String[] ALLOWED_ORIGINS = {
-        "https://plyst.info",
-        "http://plyst.info",
+        "https://plyst.topon.dev",
+        "http://plyst.topon.dev",
         "http://52.78.220.83",
         "http://localhost:3000"
     };

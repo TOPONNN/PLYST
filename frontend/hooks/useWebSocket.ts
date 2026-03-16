@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 
-const WS_URL = 'wss://plyst.info/ws';
+const WS_URL = 'wss://plyst.topon.dev/ws';
 
 export interface NotificationData {
   id: number;
@@ -98,7 +98,7 @@ export function useWebSocket(
     onBroadcastRef.current = options?.onBroadcast;
   }, [options?.onNewNotification, options?.onBroadcast]);
 
-  const API_URL = 'https://plyst.info';
+  const API_URL = 'https://plyst.topon.dev';
 
   // 알림 목록 가져오기
   const fetchNotifications = useCallback(async () => {

@@ -14,7 +14,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(@NonNull CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("https://plyst.info", "http://plyst.info", "http://52.78.220.83", "http://localhost:3000")
+                .allowedOrigins("https://plyst.topon.dev", "http://plyst.topon.dev", "http://52.78.220.83", "http://localhost:3000")
                 .allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true);

@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="https://plyst.info/">
-    <img src="https://img.shields.io/badge/🎵%20Live%20Demo-plyst.info-8B5CF6?style=for-the-badge" alt="Live Demo"/>
+  <a href="https://plyst.topon.dev/">
+    <img src="https://img.shields.io/badge/🎵%20Live%20Demo-plyst.topon.dev-8B5CF6?style=for-the-badge" alt="Live Demo"/>
   </a>
 </p>
 
